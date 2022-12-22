@@ -7,7 +7,7 @@
 *   8 4 2 4
 *   17 -> такого числа в массиве нет
 */
-using mylib;
+using UserInteraction;
 Utils utils = new Utils();
 
 int[,] arr = utils.GetRandomIntArray();

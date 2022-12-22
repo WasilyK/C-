@@ -22,8 +22,8 @@ double[,] GetRandomDoubleArray(int m, int n) {
 }
 
 void PrintDoubleArray(double[,] arr) {
-    int m = arr.GetUpperBound(0) + 1;
-    int n = arr.GetUpperBound(1) + 1;
+    int m = arr.GetLength(0);
+    int n = arr.GetLength(1);
 
     for(int i = 0; i < m; i++) {
         for(int j = 0; j < n; j++) {

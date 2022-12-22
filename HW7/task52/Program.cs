@@ -7,7 +7,7 @@
 *   8 4 2 4
 *   Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 */
-using mylib;
+using UserInteraction;
 Utils utils = new Utils();
 
 int[,] arr = utils.GetRandomIntArray();
@@ -16,8 +16,8 @@ utils.PrintIntArray(arr);
 PrintDoubleArray(CalcColumnsAverage(arr));
 
 double[] CalcColumnsAverage(int[,] arr) {
-    int row = arr.GetUpperBound(0) + 1;
-    int col = arr.GetUpperBound(1) + 1;
+    int row = arr.GetLength(0);
+    int col = arr.GetLength(1);
 
     double[] res = new double[col];
 

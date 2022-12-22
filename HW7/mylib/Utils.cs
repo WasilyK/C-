@@ -1,4 +1,4 @@
-﻿namespace mylib;
+﻿namespace UserInteraction;
 using System.Text.RegularExpressions;
 
 public class Utils {
